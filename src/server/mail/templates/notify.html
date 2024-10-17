@@ -1,0 +1,459 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type"
+            content="text/html; charset=UTF-8" />
+        <title>{{subscriptionType}} Remember Mail</title>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body style="font-family: Calibri;">
+        <table align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="600">
+            <td align="center"
+                bgcolor="#16dd94"
+                style="padding: 40px 0 40px 0; color: white;">
+                <b style="letter-spacing: 6px; font-size: 70px;">{{subscriptionType}}</b>
+                <pre style="font-size: 17px; margin-top: -5px;">Scadenza quota</pre>
+            </td>
+            <tr>
+                <td bgcolor="#ffffff"
+                    style="padding: 40px 30px 40px 30px; border: 1px solid #cccccc;">
+                    <table border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%">
+                        <tr>
+                            <td>
+                                <b style="color: #153643; font-size: 24px;">Promemoria Scadenza quota
+                                    {{subscriptionType}}</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 0 30px 0; color: #153643; font-size: 16px; line-height: 20px;">
+                                Ciao {{userUsername}}, volevo avvisarti che il {{paymentDate}}, scade la quota per
+                                {{subscriptionType}}. Se vuoi rinnovare l'abbonamento, di seguito sono riportati i dati
+                                di pagamento. {{additionalMessage}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%">
+                                    <tr>
+                                        <td width="50%"
+                                            style="padding: 0px 10px 0 10px;"
+                                            valign="top">
+                                            <table border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="100%"
+                                                height="140">
+                                                <tr>
+                                                    <td style="color: #08559E;">
+                                                        <div align="center"
+                                                            style="letter-spacing: -2.5px; font-size: 50px;">
+                                                            <i>poste<b>pay</b></i>
+                                                        </div>
+                                                        <div align="right"
+                                                            style="background-color: #EFE709; letter-spacing: -1px; font-size: 20px; width: 50%; margin-right:45px; margin-left: auto;">
+                                                            <b>Poste</b>italiane &nbsp; &nbsp;
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+
+                                        <td width="50%"
+                                            style="padding: 0px 10px 0 10px;"
+                                            valign="top">
+                                            <table border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <div align="center"
+                                                            style="color: white; background-color: #08559E; font-size: 100px;">
+                                                            &#8364;</div>
+                                                    </td>
+
+
+                                                    <td align="left">
+                                                        <b style="color: #08559E;  font-size: 40px; ">BONIFICO</b>
+                                                        <b style="color: #333333;  font-size: 40px; ">BANCARIO</b>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%">
+                                    <tr>
+                                        <td width="50%"
+                                            valign="top">
+                                            <table border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="100%"
+                                                height="140">
+                                                <tr>
+                                                    <td style="padding: 25px 10px 0 10px;">
+                                                        Puoi pagare facendo una ricarica postepay alla seguente carta:
+                                                        <br><br>
+                                                        <b style="margin-top: 50px;">Nome:</b> {{recipientName}}
+                                                        {{recipientSurname}}<br>
+                                                        <b>Numero Carta:</b> {{recipientCardNumber}}<br>
+                                                        <b>Cod Fiscale:</b> {{recipientFiscalCode}}
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="50%"
+                                            valign="top">
+                                            <table border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td style="padding: 25px 10px 0 10px;">
+                                                        Puoi pagare tramite bonifico bancario al seguente conto:<br><br>
+                                                        <b style="margin-top: 50px;">Nome:</b> {{recipientName}}
+                                                        {{recipientSurname}}<br>
+                                                        <b>IBAN:</b> {{recipientIban}} (conto estero, Germania)<br>
+                                                        <b>SWIFT/BIC:</b> {{recipientBic}}
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td style="font-size: 0; line-height: 0;"
+                                height="30">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%">
+                                    <tr>
+                                        <td align="center">
+                                            <table border="0"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                style="text-align: center;">
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white; padding: 2.5px 2.5px;">
+                                                                <b>User</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                {{userUsername}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white; width: 10px;  padding: 2.5px 2.5px;">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white;  padding: 2.5px 2.5px;">
+                                                                <b>Password</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                {{userPassword}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white; width: 10px;  padding: 2.5px 2.5px;">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white;  padding: 2.5px 2.5px;">
+                                                                <b>Data Richiesta</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                {{paymentDate}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white; width: 10px;  padding: 2.5px 2.5px;">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        width="100%">
+                                                        <tr>
+                                                            <td align="center"
+                                                                bgcolor="#62BCDB"
+                                                                style="color: white;  padding: 2.5px 2.5px;">
+                                                                <b>Data Scadenza</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td bgcolor="#d5eef6"
+                                                                style="padding: 2.5px 2.5px;"
+                                                                align="center">
+                                                                {{expirationDate}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td style="font-size: 0; line-height: 0;"
+                                height="30">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="80%"
+                                    style="text-align: center; margin: auto;">
+                                    <tr>
+                                        <td style="font-size: 15px; line-height: 20px;">
+                                            <b><i style="color: red;">{{TEXT_STR}}</i></b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="80%"
+                                    style="text-align: center; margin: auto;">
+                                    <tr>
+                                        <td style="font-size: 20px; line-height: 20px;">
+                                            <b><i style="color: #16dd94;">{{subscriptionGeneratedString}}</i></b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td bgcolor="#ee4c50"
+                    style="padding: 30px 30px 0px 30px;">
+                    <table border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%">
+                        <tr>
+                            <td align="left"
+                                bgcolor="#ee4c50"
+                                style="padding: 0px 30px 0px 30px;">
+                                <code><b style="font-size: 17px; color: white;"><u>Costo del Rinnovo</u></b></code><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ee4c50"
+                    style="padding: 0px 30px 10px 30px;">
+                    <table border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%">
+
+                        <tr>
+                            <td align="left">
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    style="margin-left: 30px; margin-top: 10px;">
+                                    <tr>
+                                        <td>
+                                            <code><b style="color: white;">{{deluxePlanText}}</b></code>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <code><b style="color: white;">{{deluxePlanPrice}}</b></code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <table border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    style="margin-left: 30px;">
+                                    <tr>
+                                        <td>
+                                            <code><b style="color: white;">{{basePlanText}}</b></code>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <code><b style="color: white;">{{basePlanPrice}}</b></code>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ee4c50"
+                    style="padding: 10px 30px 0px 30px;">
+                    <table border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%">
+                        <tr>
+                            <td align="left"
+                                bgcolor="#ee4c50"
+                                style="padding: 0px 30px 30px 30px;">
+                                <code><b><i style="color: white;">Dopo aver effettuato la ricarica per il rinnovo, avvisami comunicandomelo alla mail {{providerMail}}</i></b></code><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>

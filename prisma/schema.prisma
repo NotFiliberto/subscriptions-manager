@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+    username      String
+    password      String
+    email         String
+    subscriptions Subscription[]
+
+    @@unique([username, password, email])
+}
+
+model Subscription {
+    id                  String               @id @default(cuid())
+    user                User                 @relation(fields: [userUsername, userPassword, userEmail], references: [username, password, email], onDelete: Cascade)
+    userUsername        String
+    userPassword        String
+    userEmail           String
+    userNotificated     Boolean
+    type                String
+    macAddress          String?
+    notes               String?
+    paymentDate         DateTime
+    expirationDate      DateTime
+    historyTransactions HistoryTransaction[]
+}
+
+model HistoryTransaction {
+    id             String       @id @default(cuid())
+    subscription   Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+    subscriptionId String
+    amount         Int
+    date           DateTime     @default(now())
+}
+
+model FundTransaction {
+    id     String   @id @default(cuid())
+    type   String //History or Counter
+    date   DateTime @default(now())
+    amount Int
+}
