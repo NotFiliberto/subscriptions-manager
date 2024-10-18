@@ -9,6 +9,7 @@ const nextConfig = {
                 pathname: '**',
             },
         ],
+        domains: ["subscription-manager.notfiliberto.xyz"],
         dangerouslyAllowSVG: true
     },
     webpack: (config) => {
