@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useFormStatus } from "react-dom"
 import { useForm } from "react-hook-form"
 import ConfirmSendMailModal from "./ConfirmSendMailModal"
-import ComboBoxMultiSelectTest from "./subscriptionManagerComboBoxMultiSelectTest"
+import ComboBoxMultiSelectTest from "./tvPanelComboBoxMultiSelectTest"
 
 export default function SendMailsForm({ users }: { users: ComboBoxUser[] }) {
 	const { visible: isMailModalVisibile, toggle } = useMailModal()
