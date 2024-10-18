@@ -22,6 +22,8 @@ import { action } from "../utils"
 
 export async function getAllSubcriptions() {
 	revalidatePath("/dashboard/users")
+	revalidatePath("/dashboard/users/subscriptions/extend")
+	revalidatePath("/dashboard/mail")
 	return await prisma.subscription.findMany({
 		include: { user: true },
 		orderBy: { expirationDate: "desc" },
@@ -91,6 +93,8 @@ export async function addSubscription(userToAdd: AddSubscriptionForm) {
 			object: subscription,
 		})
 		revalidatePath("/dashboard")
+		revalidatePath("/dashboard/users/subscriptions/extend")
+		revalidatePath("/dashboard/mail")
 		return subscription
 	} catch (error) {
 		if (error instanceof PrismaClientKnownRequestError) {
@@ -158,8 +162,9 @@ export async function extendSubscription(
 			message: "User subscription extended",
 			object: { extendedSubscription },
 		})
-
+		revalidatePath("/dashboard/mail")
 		revalidatePath("dashboard/users/subscriptions/extend")
+		revalidatePath("/dashboard/mail")
 
 		return { ...extendedSubscription }
 	} catch (error) {
@@ -183,6 +188,8 @@ export const deleteSubscription = action(
 				object: { deletedSubscription },
 			})
 			revalidatePath("/dashboard/users")
+			revalidatePath("users/subscriptions/extend")
+			revalidatePath("/dashboard/mail")
 			return deletedSubscription
 		} catch (error) {
 			serverLogger.log({
@@ -225,6 +232,8 @@ export const editSubscription = action(
 			})
 
 			revalidatePath("/dashboard/users")
+			revalidatePath("users/subscriptions/extend")
+			revalidatePath("/dashboard/mail")
 			return subscriptionEdited
 		} catch (error) {
 			serverLogger.log({
