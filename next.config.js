@@ -8,8 +8,13 @@ const nextConfig = {
                 port: '',
                 pathname: '**',
             },
+            {
+                protocol: "https",
+                hostname: "subscription-manager.notfiliberto.xyz",
+                port: '',
+                pathname: "**"
+            }
         ],
-        domains: ["subscription-manager.notfiliberto.xyz"],
         dangerouslyAllowSVG: true
     },
     webpack: (config) => {
