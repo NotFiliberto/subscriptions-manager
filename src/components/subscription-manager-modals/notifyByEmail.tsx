@@ -1,4 +1,4 @@
-import { SubscriptionAndUser } from "@/lib/types/tvpanel"
+import { SubscriptionAndUser } from "@/lib/types/subscription-manager"
 import { sendMail } from "@/server/actions/mails"
 import { Dialog, Transition } from "@headlessui/react"
 import { EnvelopeIcon } from "@heroicons/react/20/solid"

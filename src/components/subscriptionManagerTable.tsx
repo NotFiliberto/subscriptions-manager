@@ -1,6 +1,6 @@
 import Table from "@/components/common/table/table"
 import { SortColumn, TableColumn } from "@/components/common/table/types"
-import { SubscriptionAndUser } from "@/lib/types/tvpanel"
+import { SubscriptionAndUser } from "@/lib/types/subscription-manager"
 import { calculateDiff, getStatusColor } from "@/lib/utils"
 import {
 	EnvelopeIcon,
@@ -9,22 +9,22 @@ import {
 } from "@heroicons/react/20/solid"
 import moment from "moment"
 import { Tooltip, TooltipProvider } from "./common/tooltip"
-import DeleteSubscriptionModal from "./tvpanel-modals/deleteSubscription"
-import EditSubscriptionModal from "./tvpanel-modals/editSubscription"
-import NotifyUserByEmailModal from "./tvpanel-modals/notifyByEmail"
-import useModal from "./tvpanel-modals/useSubscriptionModal"
+import DeleteSubscriptionModal from "./subscription-manager-modals/deleteSubscription"
+import EditSubscriptionModal from "./subscription-manager-modals/editSubscription"
+import NotifyUserByEmailModal from "./subscription-manager-modals/notifyByEmail"
+import useModal from "./subscription-manager-modals/useSubscriptionModal"
 
-export type TVPanelProps = {
+export type SubscriptionManagerProps = {
 	subscriptionToRender: SubscriptionAndUser[]
 	sortColumn: SortColumn<SubscriptionAndUser>
 	onSort: (sm: SortColumn<SubscriptionAndUser>) => void
 }
 
-export default function TVPanelTable({
+export default function SubscriptionManagerTable({
 	subscriptionToRender,
 	sortColumn,
 	onSort,
-}: TVPanelProps) {
+}: SubscriptionManagerProps) {
 	const {
 		visible: isDeleteModalVisible,
 		toggle: deleteModalToggle,

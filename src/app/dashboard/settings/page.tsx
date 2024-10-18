@@ -1,5 +1,5 @@
 import { classNames } from "@/components/utils"
-import { MAIL_SETTING } from "@/lib/tvPanelRoutes"
+import { MAIL_SETTING } from "@/lib/subscriptionManagerRoutes"
 
 const actions = [
 	{

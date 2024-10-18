@@ -1,12 +1,15 @@
-import { SubscriptionType } from "@/lib/types/tvpanel"
+import { SubscriptionType } from "@/lib/types/subscription-manager"
 import { SendMailFormInput } from "@/lib/validations/mail"
 import _ from "lodash"
 import nodemailer from "nodemailer"
 import { smtpOptions } from "./config"
-import { TVPanelMailParams, buildTemplate } from "./templates/buildTemplate"
+import {
+	SubscriptionManagerMailParams,
+	buildTemplate,
+} from "./templates/buildTemplate"
 
 type RecipientInfo = Pick<
-	TVPanelMailParams,
+	SubscriptionManagerMailParams,
 	| "recipientName"
 	| "recipientSurname"
 	| "recipientCardNumber"

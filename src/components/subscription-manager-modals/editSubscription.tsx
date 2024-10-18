@@ -2,7 +2,10 @@ import {
 	SUBSCRIPTION_TYPE,
 	USER_NOTIFICATION_STATUS,
 } from "@/lib/global-variables"
-import { SubscriptionAndUser, SubscriptionType } from "@/lib/types/tvpanel"
+import {
+	SubscriptionAndUser,
+	SubscriptionType,
+} from "@/lib/types/subscription-manager"
 import { formatMACAddress } from "@/lib/utils"
 import {
 	EditSubscriptionInput,
@@ -21,7 +24,7 @@ import BasicTextArea from "../common/form/basicTextArea"
 import FormSelect from "../common/form/formSelect"
 import InputText from "../common/form/inputText"
 import Notification from "../common/notification"
-import TVPanelDatepicker from "../tvPanelDatepicker"
+import SubscriptionManagerDatepicker from "../subscriptionManagerDatepicker"
 
 export type EditubscriptionModalProps = {
 	visible: boolean
@@ -284,7 +287,7 @@ export default function EditSubscriptionModal({
 														</p>
 													</div>
 													<div className="col-span-full">
-														<TVPanelDatepicker
+														<SubscriptionManagerDatepicker
 															label={{
 																id: "subscriptionPeriod",
 																text: "Periodo abbonamento",

@@ -3,7 +3,7 @@ import {
 	Pricing,
 	SUBSCRIPTION_STATUS_COLORS,
 	UserNotified,
-} from "./types/tvpanel"
+} from "./types/subscription-manager"
 
 export const SUBSCRIPTION_TYPE = ["VIP", "VIP2", "GUEST"] as const
 

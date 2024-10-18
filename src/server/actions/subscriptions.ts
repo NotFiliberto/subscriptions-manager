@@ -3,7 +3,7 @@
 import { DURATIONS } from "@/lib/global-variables"
 import { clientLogger } from "@/lib/logger/clientLogger"
 import { serverLogger } from "@/lib/logger/serverLogger"
-import { SubscriptionType } from "@/lib/types/tvpanel"
+import { SubscriptionType } from "@/lib/types/subscription-manager"
 import { omit, pick } from "@/lib/utils"
 import {
 	deleteSubscriptionSchema,

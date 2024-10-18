@@ -1,7 +1,7 @@
 "use server"
 
 import { serverLogger } from "@/lib/logger/serverLogger"
-import { subscriptionTypeSchema } from "@/lib/types/tvpanel"
+import { subscriptionTypeSchema } from "@/lib/types/subscription-manager"
 import { sendMailsInputSchema } from "@/lib/validations/mail"
 import { z } from "zod"
 import { mailSettings } from "../mail/config"

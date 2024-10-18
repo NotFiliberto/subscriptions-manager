@@ -3,11 +3,14 @@
 import CheckBox from "@/components/common/form/checkBox"
 import FormSelect from "@/components/common/form/formSelect"
 import Notification from "@/components/common/notification"
-import TVPanelUserComboBox from "@/components/tvPanelUserComboBox"
+import SubscriptionManagerUserComboBox from "@/components/subscriptionManagerUserComboBox"
 import { DURATIONS } from "@/lib/global-variables"
 import { clientLogger } from "@/lib/logger/clientLogger"
 import { AllNotificationsStates } from "@/lib/types/notifications"
-import { ComboBoxUser, SubscriptionType } from "@/lib/types/tvpanel"
+import {
+	ComboBoxUser,
+	SubscriptionType,
+} from "@/lib/types/subscription-manager"
 import {
 	ExtendSubscriptionFormValues,
 	extendSubscriptionInputSchema,
@@ -156,7 +159,7 @@ export default function ExtendSubscription({
 
 					<div className="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 md:col-span-2">
 						<div className="col-span-full">
-							<TVPanelUserComboBox
+							<SubscriptionManagerUserComboBox
 								control={{
 									control,
 									name: "user",

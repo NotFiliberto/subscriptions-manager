@@ -4,15 +4,15 @@ import { Input } from "@/components/catalyst-ui-kit/input"
 import { Text } from "@/components/catalyst-ui-kit/text"
 import { Textarea } from "@/components/catalyst-ui-kit/textarea"
 import Badge from "@/components/common/badge"
-import useMailModal from "@/components/tvpanel-modals/useMailModal"
-import { ComboBoxUser } from "@/lib/types/tvpanel"
+import useMailModal from "@/components/subscription-manager-modals/useMailModal"
+import { ComboBoxUser } from "@/lib/types/subscription-manager"
 import { SendMailFormInput, sendMailsInputSchema } from "@/lib/validations/mail"
 import { Fieldset, Field as HeadlessField } from "@headlessui/react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useFormStatus } from "react-dom"
 import { useForm } from "react-hook-form"
 import ConfirmSendMailModal from "./ConfirmSendMailModal"
-import ComboBoxMultiSelectTest from "./tvPanelComboBoxMultiSelectTest"
+import ComboBoxMultiSelectTest from "./subscriptionManagerComboBoxMultiSelectTest"
 
 export default function SendMailsForm({ users }: { users: ComboBoxUser[] }) {
 	const { visible: isMailModalVisibile, toggle } = useMailModal()

@@ -4,7 +4,7 @@ import BasicTextArea from "@/components/common/form/basicTextArea"
 import FormSelect from "@/components/common/form/formSelect"
 import InputText from "@/components/common/form/inputText"
 import Notification from "@/components/common/notification"
-import TVPanelDatepicker from "@/components/tvPanelDatepicker"
+import SubscriptionManagerDatepicker from "@/components/subscriptionManagerDatepicker"
 import {
 	DURATIONS,
 	SUBSCRIPTION_TYPE,
@@ -170,7 +170,7 @@ export default function AddLine() {
 						</div>
 
 						<div className="col-span-full">
-							<TVPanelDatepicker
+							<SubscriptionManagerDatepicker
 								label={{
 									id: "subscriptionPeriod",
 									text: "Data di pagamento",

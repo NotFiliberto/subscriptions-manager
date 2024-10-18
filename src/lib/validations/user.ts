@@ -1,6 +1,6 @@
 import { SUBSCRIPTION_TYPE } from "@/lib/global-variables"
 import { z } from "zod"
-import { subscriptionTypeSchema } from "../types/tvpanel"
+import { subscriptionTypeSchema } from "../types/subscription-manager"
 import { zodKeys } from "../utils"
 
 const ServerPriceSchema = z.object(

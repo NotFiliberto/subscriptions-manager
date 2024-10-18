@@ -1,4 +1,4 @@
-import { SubscriptionAndUser } from "@/lib/types/tvpanel"
+import { SubscriptionAndUser } from "@/lib/types/subscription-manager"
 import { calculateDiff } from "@/lib/utils"
 import { ListItem } from "../common/listItem"
 

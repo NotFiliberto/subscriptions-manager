@@ -1,9 +1,9 @@
-import TVPanelSidebar from "../../components/tvPanelSidebar"
+import SubscriptionManagerSidebar from "@/components/subscriptionManagerSidebar"
 
 export default async function SidebarLayout({
-    children,
+	children,
 }: {
-    children: React.ReactNode
+	children: React.ReactNode
 }) {
-    return <TVPanelSidebar>{children}</TVPanelSidebar>
+	return <SubscriptionManagerSidebar>{children}</SubscriptionManagerSidebar>
 }

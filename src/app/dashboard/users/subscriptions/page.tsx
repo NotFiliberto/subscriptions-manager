@@ -1,5 +1,5 @@
 import { classNames } from "@/components/utils"
-import { ADD_USER, EXTEND_SUBSCRIPTION } from "@/lib/tvPanelRoutes"
+import { ADD_USER, EXTEND_SUBSCRIPTION } from "@/lib/subscriptionManagerRoutes"
 
 const actions = [
 	{

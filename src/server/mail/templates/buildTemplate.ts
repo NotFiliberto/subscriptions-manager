@@ -1,7 +1,7 @@
-import { SubscriptionType } from "@/lib/types/tvpanel"
+import { SubscriptionType } from "@/lib/types/subscription-manager"
 import { renderFile } from "template-file"
 
-export type TVPanelMailParams = {
+export type SubscriptionManagerMailParams = {
 	//subscription info
 	subscriptionType: SubscriptionType
 	paymentDate: Date | string

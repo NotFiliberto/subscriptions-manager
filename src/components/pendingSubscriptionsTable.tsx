@@ -1,5 +1,5 @@
 import { PENDING_SUBSCRIPTION_DAYS } from "@/lib/global-variables"
-import { SubscriptionAndUser } from "@/lib/types/tvpanel"
+import { SubscriptionAndUser } from "@/lib/types/subscription-manager"
 import { asyncComponent, calculateDiff } from "@/lib/utils"
 
 async function PendingSubscriptionTable({
