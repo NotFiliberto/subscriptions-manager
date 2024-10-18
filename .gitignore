@@ -39,6 +39,7 @@ next-env.d.ts
 
 dev.db
 subscription-dashboard-manager.db
+subscription-manager.db
 
 # logs
 /logs

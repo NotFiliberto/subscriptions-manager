@@ -6,7 +6,7 @@ import {
 import { AddSubscriptionForm } from "@/lib/validations/user"
 
 export const defaultAddSubscriptionInputData: Partial<AddSubscriptionForm> = {
-	username: "sdf",
+	username: "",
 	duration: {
 		title: DURATIONS[0].title,
 		months: DURATIONS[0].months,
@@ -15,8 +15,8 @@ export const defaultAddSubscriptionInputData: Partial<AddSubscriptionForm> = {
 		title: USER_NOTIFICATION_STATUS[0].title,
 		notified: USER_NOTIFICATION_STATUS[0].notified,
 	},
-	email: "sdfs@gmail.it",
-	password: "sdf",
+	email: "",
+	password: "",
 	type: { title: SUBSCRIPTION_TYPE[0] },
 	macAddress: "",
 	subscriptionPeriod: {
