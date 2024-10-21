@@ -13,6 +13,9 @@ You can try a live demo of the dashboard at:
 -   Username: `admin`
 -   Password: `admin`
 
+![Dashboard Screenshot 1](./public/screenshots/homepage.png)
+![Dashboard Screenshot 2](./public/screenshots/users-table.png)
+
 # 📝 Key Functionalities
 
 -   **Add Users/Subscriptions**: Use the "Create Subscription" form to add a new user and their subscription duration.
