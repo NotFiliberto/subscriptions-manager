@@ -4,6 +4,15 @@ A powerful **Next.js** and **TypeScript** based dashboard to manage user subscri
 
 The dashboard offers a smooth and intuitive interface for managing users and subscriptions, allowing you to effortlessly add, update, and track user subscriptions while maintaining full control over notifications and logs.
 
+## 🌐 Live Demo
+
+You can try a live demo of the dashboard at:
+
+[subscription-manager.notfiliberto.xyz](https://subscription-manager.notfiliberto.xyz)
+
+-   Username: `admin`
+-   Password: `admin`
+
 # 📝 Key Functionalities
 
 -   **Add Users/Subscriptions**: Use the "Create Subscription" form to add a new user and their subscription duration.
