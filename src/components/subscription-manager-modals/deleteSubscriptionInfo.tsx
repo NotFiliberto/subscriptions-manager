@@ -16,7 +16,7 @@ export default function DeleteSubscriptionInfo({
 				title="Indirizzo email"
 				content={subscription.userEmail}
 			/>
-			<ListItem title="Server" content={subscription.type} />
+			<ListItem title="Type" content={subscription.type} />
 			<ListItem
 				title="Notificato"
 				content={subscription.userNotificated ? <>Si</> : <>No</>}

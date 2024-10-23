@@ -30,7 +30,7 @@ async function PendingSubscriptionTable({
 								scope="col"
 								className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell"
 							>
-								Server
+								Type
 							</th>
 							<th
 								scope="col"

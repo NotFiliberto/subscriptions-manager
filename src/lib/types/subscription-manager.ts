@@ -35,10 +35,6 @@ export const subscriptionTypeSchema = z.union([
 ])
 export type SubscriptionType = z.infer<typeof subscriptionTypeSchema>
 
-export type ServerInfo = {
-	readonly title: SubscriptionType
-}
-
 // It creates an object where the keys are the subscription types defined by SubscriptionType
 export type Pricing = {
 	[name in (typeof subscriptionTypeSchema)["_input"]]: number

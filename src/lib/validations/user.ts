@@ -1,11 +1,6 @@
-import { SUBSCRIPTION_TYPE } from "@/lib/global-variables"
 import { z } from "zod"
 import { subscriptionTypeSchema } from "../types/subscription-manager"
 import { zodKeys } from "../utils"
-
-const ServerPriceSchema = z.object(
-	Object.fromEntries(SUBSCRIPTION_TYPE.map((key) => [key, z.number()])) // Create entries
-) as z.ZodObject<{ [K in (typeof SUBSCRIPTION_TYPE)[number]]: z.ZodNumber }>
 
 export const durationSchema = z.object({
 	title: z.string(),

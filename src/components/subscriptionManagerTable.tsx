@@ -91,7 +91,7 @@ export default function SubscriptionManagerTable({
 		},
 		{
 			hidden: true,
-			label: "Server",
+			label: "Type",
 			path: "type",
 			__type: "standard",
 		},

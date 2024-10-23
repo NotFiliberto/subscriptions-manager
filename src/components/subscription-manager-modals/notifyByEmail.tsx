@@ -164,7 +164,7 @@ export default function NotifyUserByEmailModal({
 													}
 												/>
 												<ListItem
-													title="Server"
+													title="Type"
 													content={subscription.type}
 												/>
 												<ListItem
